@@ -41,7 +41,7 @@ def registerUser(request):
                 return redirect('index')
 
     context = {'form': form, 'page': page}
-    return render(request, 'auth/login_register.html', context)
+    return render(request, 'login_register.html', context)
 
 
 @login_required(login_url='login')
