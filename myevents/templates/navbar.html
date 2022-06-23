@@ -1,0 +1,15 @@
+<nav class="container-fluid">
+  <div class="container nav-wrapper bg-dark">
+      <div class="logo"><a href="{%url 'index'%}">myevents</a></div>
+      <div class="menu">
+          <ul>
+              {% if user.is_authenticated %}
+             
+              <li><a href="{% url 'logout'%}">Logout</a></li>
+              {% else %}
+              <li><a href="{% url 'login'%}">Sign In</a></li>
+              {% endif %}
+          </ul>
+      </div>
+  </div>
+  </nav>
