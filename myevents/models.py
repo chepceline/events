@@ -20,7 +20,7 @@ class Category(models.Model):
 class Event(models.Model):
     class Meta:
         verbose_name = 'Event'
-        verbose_name_plural = ''
+        verbose_name_plural = 'Events'
     
     category = models.ForeignKey(
         Category, on_delete=models.SET_NULL, null=True, blank=True)
